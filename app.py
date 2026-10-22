@@ -1,10 +1,12 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(_name_)
+
 
 @app.route("/")
-def home():
+def accueil():
     return render_template("index.html")
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
+if _name_ == "_main_":
+    app.run(host="0.0.0.0", port=5000, debug=False)
