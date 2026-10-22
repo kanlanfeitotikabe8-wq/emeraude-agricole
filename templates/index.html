@@ -3,221 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Émeraude Agricole - Togo</title>
+    <title>Émeraude Agricole | Cultivons l'avenir</title>
+    <meta name="description" content="Émeraude Agricole au Togo : labour mécanisé, production végétale, maintenance des engins agricoles et accompagnement agricole.">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
-    <header>
-        <h2>🌱 ÉMERAUDE AGRICOLE</h2>
+<header class="header">
+    <div class="container navbar">
+        <a href="#accueil" class="logo">
+            <span class="logo-icon">🌿</span>
+            <span>ÉMERAUDE AGRICOLE</span>
+        </a>
+
         <nav>
             <a href="#accueil">Accueil</a>
             <a href="#services">Services</a>
             <a href="#produits">Produits</a>
+            <a href="#apropos">À propos</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>
 
-    <section id="accueil" class="hero">
-        <h1>Ensemble, cultivons l'avenir !</h1>
-        <p>Votre partenaire en production végétale et mécanisation agricole au Togo.</p>
-        <a class="bouton" href="#contact">Contactez-nous</a>
-    </section>
-
-    <section id="services">
-    <h2>Nos services agricoles</h2>
-
-    <p class="intro">
-        Émeraude Agricole vous accompagne dans vos travaux agricoles
-        grâce à son expertise en production végétale et en mécanisation agricole.
-    </p>
-
-    <div class="cartes">
-
-        <article class="carte">
-            <div class="icone">🚜</div>
-            <h3>Labour mécanisé</h3>
-            <p>
-                Préparation des terres agricoles avec des tracteurs
-                et des équipements adaptés à vos besoins.
-            </p>
-        </article>
-
-        <article class="carte">
-            <div class="icone">🌱</div>
-            <h3>Production végétale</h3>
-            <p>
-                Installation, entretien et suivi technique
-                de vos cultures agricoles.
-            </p>
-        </article>
-
-        <article class="carte">
-            <div class="icone">🔧</div>
-            <h3>Maintenance agricole</h3>
-            <p>
-                Entretien des tracteurs et des équipements
-                pour améliorer leur fonctionnement.
-            </p>
-        </article>
-
-        <article class="carte">
-            <div class="icone">🌾</div>
-            <h3>Suivi des cultures</h3>
-            <p>
-                Appui technique pour l'installation et le suivi
-                des cultures annuelles et pérennes.
-            </p>
-        </article>
-
-    </div>
-</section>
-
-    <section id="produits">
-    <h2>Nos produits agricoles</h2>
-
-    <p class="intro">
-        Découvrez nos produits agricoles. Pour connaître
-        les disponibilités et les prix, contactez-nous.
-    </p>
-
-    <div class="cartes">
-
-        <article class="carte produit">
-            <div class="icone">🌶️</div>
-            <h3>Piment vert</h3>
-            <p>Production maraîchère.</p>
-            <a class="bouton"
-               href="https://wa.me/22893755917?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20piment%20vert."
-               target="_blank"
-               rel="noopener noreferrer">
-                Demander le prix
-            </a>
-        </article>
-
-        <article class="carte produit">
-            <div class="icone">🍅</div>
-            <h3>Tomate</h3>
-            <p>Production maraîchère.</p>
-            <a class="bouton"
-               href="https://wa.me/22893755917?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20la%20tomate."
-               target="_blank"
-               rel="noopener noreferrer">
-                Demander le prix
-            </a>
-        </article>
-
-        <article class="carte produit">
-            <div class="icone">🌾</div>
-            <h3>Sorgho</h3>
-            <p>Culture céréalière.</p>
-            <a class="bouton"
-               href="https://wa.me/22893755917?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20sorgho."
-               target="_blank"
-               rel="noopener noreferrer">
-                Demander le prix
-            </a>
-        </article>
-
-        <article class="carte produit">
-            <div class="icone">🫚</div>
-            <h3>Gingembre</h3>
-            <p>Culture agricole.</p>
-            <a class="bouton"
-               href="https://wa.me/22893755917?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20gingembre."
-               target="_blank"
-               rel="noopener noreferrer">
-                Demander le prix
-            </a>
-        </article>
-
-    </div>
-
-    <p class="note">
-        Les prix et la disponibilité sont à confirmer auprès
-        d'Émeraude Agricole.
-    </p>
-</section>
-
-    <section id="contact">
-        <h2>Contactez Émeraude Agricole</h2>
-        <p>Téléphone : 93 75 59 17</p>
-        <a class="bouton" href="https://wa.me/22893755917" target="_blank" rel="noopener noreferrer">
-            Nous contacter sur WhatsApp
+        <a class="btn btn-green" href="https://wa.me/22893755917" target="_blank">
+            Nous contacter
         </a>
-    </section>
+    </div>
+</header>
 
-    <footer>
-        <p>© 2026 Émeraude Agricole — Tous droits réservés.</p>
-    </footer>
+<main>
+
+<section class="hero" id="accueil">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+        <span class="eyebrow">AGRICULTURE • INNOVATION • MÉCANISATION</span>
+
+        <h1>
+            Cultivons aujourd'hui<br>
+            <span>les récoltes de demain.</span>
+        </h1>
+
+        <p class="hero-description">
+            Émeraude Agricole accompagne le développement agricole au Togo
+            grâce à la mécanisation, à la production végétale et aux services
+            agricoles adaptés aux besoins des producteurs.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#services" class="btn btn-gold">Découvrir nos services</a>
+            <a href="https://wa.me/22893755917" class="btn btn-outline" target="_blank">
+                Contact WhatsApp
+            </a>
+        </div>
+
+        <p class="hero-slogan">Ensemble, cultivons l’avenir !</p>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">CE QUE NOUS FAISONS</span>
+            <h2>Nos services agricoles</h2>
+            <p>
+                Des solutions pratiques pour améliorer les travaux agricoles
+                et accompagner les producteurs tout au long de leurs activités.
+            </p>
+        </div>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+                <div class="service-icon">🚜</div>
+                <h3>Labour mécanisé</h3>
+                <p>
+                    Préparation des terres avec des équipements agricoles
+                    pour faciliter les travaux et gagner du temps.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🌱</div>
+                <h3>Production végétale</h3>
+                <p>
+                    Installation et suivi des cultures maraîchères,
+                    vivrières et autres spéculations agricoles.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>Maintenance agricole</h3>
+                <p>
+                    Entretien et maintenance des engins et équipements
+                    agricoles pour favoriser leur bon fonctionnement.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">👨🏿‍🌾</div>
+                <h3>Formation à la conduite</h3>
+                <p>
+                    Initiation à la conduite et à l'utilisation des
+                    engins agricoles selon les besoins des participants.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🌾</div>
+                <h3>Accompagnement agricole</h3>
+                <p>
+                    Conseils pratiques pour la mise en place et le suivi
+                    des activités de production végétale.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon">🛠️</div>
+                <h3>Travaux agricoles</h3>
+                <p>
+                    Des prestations adaptées aux besoins des exploitations
+                    et aux différentes étapes de la production agricole.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section section-light" id="produits">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">NOS CULTURES</span>
+            <h2>Nos produits agricoles</h2>
+            <p>
+                Découvrez quelques cultures qui font partie de nos
+                activités agricoles.
+            </p>
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1588252303782-cb80119abd6d?auto=format&fit=crop&w=800&q=80"
+                     alt="Piments frais" loading="lazy">
+                <h3>Piment vert</h3>
+                <p>Une culture maraîchère appréciée dans la cuisine locale.</p>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1546470427-e5f3a5d4b7a1?auto=format&fit=crop&w=800&q=80"
+                     alt="Tomates fraîches" loading="lazy">
+                <h3>Tomate</h3>
+                <p>Une culture importante pour l'alimentation et les marchés.</p>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80"
+                     alt="Champ agricole" loading="lazy">
+                <h3>Sorgho</h3>
+                <p>Une céréale adaptée à de nombreuses zones de production.</p>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f4?auto=format&fit=crop&w=800&q=80"
+                     alt="Gingembre" loading="lazy">
+                <h3>Gingembre</h3>
+                <p>Une culture recherchée pour ses usages alimentaires.</p>
+            </article>
+
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80"
+                     alt="Légumes frais" loading="lazy">
+                <h3>Aubergine africaine</h3>
+                <p>Un légume apprécié dans plusieurs préparations locales.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="apropos">
+    <div class="container about-grid">
+
+        <div class="about-image" role="img" aria-label="Paysage agricole"></div>
+
+        <div class="about-content">
+            <span class="eyebrow">QUI SOMMES-NOUS ?</span>
+            <h2>Une agriculture tournée vers l'avenir</h2>
+
+            <p>
+                Émeraude Agricole est une initiative orientée vers la
+                production végétale et la mécanisation agricole au Togo.
+            </p>
+
+            <p>
+                Notre ambition est de contribuer à des travaux agricoles
+                plus efficaces et à une production adaptée aux besoins
+                des producteurs.
+            </p>
+
+            <ul>
+                <li>Prestations de labour mécanisé</li>
+                <li>Production végétale</li>
+                <li>Maintenance des équipements agricoles</li>
+                <li>Services adaptés au contexte agricole togolais</li>
+            </ul>
+
+            <a href="https://wa.me/22893755917" class="btn btn-green" target="_blank">
+                Parlons de votre projet
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="container contact-box">
+        <div>
+            <span class="eyebrow">CONTACTEZ-NOUS</span>
+            <h2>Vous avez un projet agricole ?</h2>
+            <p>
+                Contactez Émeraude Agricole pour discuter de vos besoins
+                en mécanisation ou en production végétale.
+            </p>
+        </div>
+
+        <a href="https://wa.me/22893755917" class="btn btn-gold" target="_blank">
+            Écrire sur WhatsApp
+        </a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+            <div>
+                <a href="#accueil" class="logo footer-logo">
+                    <span class="logo-icon">🌿</span>
+                    <span>ÉMERAUDE AGRICOLE</span>
+                </a>
+                <p>
+                    Des solutions agricoles pour accompagner la production
+                    végétale et la mécanisation au Togo.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Nos services</a></li>
+                    <li><a href="#produits">Nos produits</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <ul>
+                    <li>Togo — Région des Savanes</li>
+                    <li>
+                        <a href="https://wa.me/22893755917" target="_blank">
+                            WhatsApp : +228 93 75 59 17
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2026 Émeraude Agricole — Ensemble, cultivons l’avenir !
+        </div>
+
+    </div>
+</footer>
 
 </body>
 </html>
-
-<section id="demande">
-    <h2>Demander une prestation agricole</h2>
-
-    <p class="intro">
-        Remplissez ce formulaire pour demander un devis
-        de labour mécanisé ou une autre prestation agricole.
-    </p>
-
-    <form id="formulaire-demande">
-        <label for="nom">Nom et prénom :</label>
-        <input type="text" id="nom" required
-               placeholder="Votre nom et prénom">
-
-        <label for="telephone">Numéro de téléphone :</label>
-        <input type="tel" id="telephone" required
-               placeholder="Ex. : 90 00 00 00">
-
-        <label for="localite">Localité du champ :</label>
-        <input type="text" id="localite" required
-               placeholder="Village ou ville">
-
-        <label for="superficie">Superficie à travailler (hectares) :</label>
-        <input type="number" id="superficie" min="0.01"
-               step="0.01" required placeholder="Ex. : 2">
-
-        <label for="prestation">Prestation souhaitée :</label>
-        <select id="prestation" required>
-            <option value="">Choisissez une prestation</option>
-            <option value="Labour mécanisé">Labour mécanisé</option>
-            <option value="Préparation du sol">Préparation du sol</option>
-            <option value="Installation des cultures">Installation des cultures</option>
-            <option value="Autre prestation agricole">Autre prestation agricole</option>
-        </select>
-
-        <label for="details">Informations complémentaires :</label>
-        <textarea id="details" rows="4"
-                  placeholder="Précisez vos besoins si nécessaire"></textarea>
-
-        <button type="submit" class="bouton">
-            Envoyer ma demande sur WhatsApp
-        </button>
-    </form>
-</section>
-
-<script>
-document.getElementById("formulaire-demande").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const nom = document.getElementById("nom").value.trim();
-    const telephone = document.getElementById("telephone").value.trim();
-    const localite = document.getElementById("localite").value.trim();
-    const superficie = document.getElementById("superficie").value;
-    const prestation = document.getElementById("prestation").value;
-    const details = document.getElementById("details").value.trim();
-
-    const message =
-        "Bonjour Émeraude Agricole, je souhaite demander une prestation agricole.%0A%0A" +
-        "Nom : " + encodeURIComponent(nom) + "%0A" +
-        "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
-        "Localité : " + encodeURIComponent(localite) + "%0A" +
-        "Superficie : " + encodeURIComponent(superficie) + " hectare(s)%0A" +
-        "Prestation : " + encodeURIComponent(prestation) + "%0A" +
-        "Informations complémentaires : " + encodeURIComponent(details);
-
-    window.open("https://wa.me/22893755917?text=" + message, "_blank");
-});
-</script>
