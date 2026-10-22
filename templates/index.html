@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Émeraude Agricole - Togo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
 
+    <header>
+        <h2>🌱 ÉMERAUDE AGRICOLE</h2>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#produits">Produits</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <h1>Ensemble, cultivons l'avenir !</h1>
+        <p>Votre partenaire en production végétale et mécanisation agricole au Togo.</p>
+        <a class="bouton" href="#contact">Contactez-nous</a>
+    </section>
+
+    <section id="services">
+    <h2>Nos services agricoles</h2>
+
+    <p class="intro">
+        Émeraude Agricole vous accompagne dans vos travaux agricoles
+        grâce à son expertise en production végétale et en mécanisation agricole.
+    </p>
+
+    <div class="cartes">
+
+        <article class="carte">
+            <div class="icone">🚜</div>
+            <h3>Labour mécanisé</h3>
+            <p>
+                Préparation des terres agricoles avec des tracteurs
+                et des équipements adaptés à vos besoins.
+            </p>
+        </article>
+
+        <article class="carte">
+            <div class="icone">🌱</div>
+            <h3>Production végétale</h3>
+            <p>
+                Installation, entretien et suivi technique
+                de vos cultures agricoles.
+            </p>
+        </article>
+
+        <article class="carte">
+            <div class="icone">🔧</div>
+            <h3>Maintenance agricole</h3>
+            <p>
+                Entretien des tracteurs et des équipements
+                pour améliorer leur fonctionnement.
+            </p>
+        </article>
+
+        <article class="carte">
+            <div class="icone">🌾</div>
+            <h3>Suivi des cultures</h3>
+            <p>
+                Appui technique pour l'installation et le suivi
+                des cultures annuelles et pérennes.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+    <section id="produits">
+    <h2>Nos produits agricoles</h2>
+
+    <p class="intro">
+        Découvrez nos produits agricoles. Pour connaître
+        les disponibilités et les prix, contactez-nous.
+    </p>
+
+    <div class="cartes">
+
+        <article class="carte produit">
+            <div class="icone">🌶️</div>
+            <h3>Piment vert</h3>
+            <p>Production maraîchère.</p>
+            <a class="bouton"
+               href="https://wa.me/22893755917?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20piment%20vert."
+               target="_blank"
+               rel="noopener noreferrer">
+                Demander le prix
+            </a>
+        </article>
+
+        <article class="carte produit">
+            <div class="icone">🍅</div>
+            <h3>Tomate</h3>
+            <p>Production maraîchère.</p>
+            <a class="bouton"
+               href="https://wa.me/22893755917?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20la%20tomate."
+               target="_blank"
+               rel="noopener noreferrer">
+                Demander le prix
+            </a>
+        </article>
+
+        <article class="carte produit">
+            <div class="icone">🌾</div>
+            <h3>Sorgho</h3>
+            <p>Culture céréalière.</p>
+            <a class="bouton"
+               href="https://wa.me/22893755917?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20sorgho."
+               target="_blank"
+               rel="noopener noreferrer">
+                Demander le prix
+            </a>
+        </article>
+
+        <article class="carte produit">
+            <div class="icone">🫚</div>
+            <h3>Gingembre</h3>
+            <p>Culture agricole.</p>
+            <a class="bouton"
+               href="https://wa.me/22893755917?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20gingembre."
+               target="_blank"
+               rel="noopener noreferrer">
+                Demander le prix
+            </a>
+        </article>
+
+    </div>
+
+    <p class="note">
+        Les prix et la disponibilité sont à confirmer auprès
+        d'Émeraude Agricole.
+    </p>
+</section>
+
+    <section id="contact">
+        <h2>Contactez Émeraude Agricole</h2>
+        <p>Téléphone : 93 75 59 17</p>
+        <a class="bouton" href="https://wa.me/22893755917" target="_blank" rel="noopener noreferrer">
+            Nous contacter sur WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Émeraude Agricole — Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+
+<section id="demande">
+    <h2>Demander une prestation agricole</h2>
+
+    <p class="intro">
+        Remplissez ce formulaire pour demander un devis
+        de labour mécanisé ou une autre prestation agricole.
+    </p>
+
+    <form id="formulaire-demande">
+        <label for="nom">Nom et prénom :</label>
+        <input type="text" id="nom" required
+               placeholder="Votre nom et prénom">
+
+        <label for="telephone">Numéro de téléphone :</label>
+        <input type="tel" id="telephone" required
+               placeholder="Ex. : 90 00 00 00">
+
+        <label for="localite">Localité du champ :</label>
+        <input type="text" id="localite" required
+               placeholder="Village ou ville">
+
+        <label for="superficie">Superficie à travailler (hectares) :</label>
+        <input type="number" id="superficie" min="0.01"
+               step="0.01" required placeholder="Ex. : 2">
+
+        <label for="prestation">Prestation souhaitée :</label>
+        <select id="prestation" required>
+            <option value="">Choisissez une prestation</option>
+            <option value="Labour mécanisé">Labour mécanisé</option>
+            <option value="Préparation du sol">Préparation du sol</option>
+            <option value="Installation des cultures">Installation des cultures</option>
+            <option value="Autre prestation agricole">Autre prestation agricole</option>
+        </select>
+
+        <label for="details">Informations complémentaires :</label>
+        <textarea id="details" rows="4"
+                  placeholder="Précisez vos besoins si nécessaire"></textarea>
+
+        <button type="submit" class="bouton">
+            Envoyer ma demande sur WhatsApp
+        </button>
+    </form>
+</section>
+
+<script>
+document.getElementById("formulaire-demande").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nom = document.getElementById("nom").value.trim();
+    const telephone = document.getElementById("telephone").value.trim();
+    const localite = document.getElementById("localite").value.trim();
+    const superficie = document.getElementById("superficie").value;
+    const prestation = document.getElementById("prestation").value;
+    const details = document.getElementById("details").value.trim();
+
+    const message =
+        "Bonjour Émeraude Agricole, je souhaite demander une prestation agricole.%0A%0A" +
+        "Nom : " + encodeURIComponent(nom) + "%0A" +
+        "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
+        "Localité : " + encodeURIComponent(localite) + "%0A" +
+        "Superficie : " + encodeURIComponent(superficie) + " hectare(s)%0A" +
+        "Prestation : " + encodeURIComponent(prestation) + "%0A" +
+        "Informations complémentaires : " + encodeURIComponent(details);
+
+    window.open("https://wa.me/22893755917?text=" + message, "_blank");
+});
+</script>
